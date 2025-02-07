@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>3D Download Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            perspective: 1000px;
+            background-color: #f4f4f4;
+        }
+
+        .sphere-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            animation: rotate 20s linear infinite;
+        }
+
+        .download-button {
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            transform-origin: center;
+        }
+
+        .download-button:hover {
+            transform: scale(1.2);
+        }
+
+        .download-button:hover::after {
+            animation: none; /* 停止旋转动画 */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sphere-container">
+    <!-- 生成20个下载按钮 -->
+    <button class="download-button" style="transform: rotateX(0deg) rotateY(0deg) translateZ(200px);"
+            onclick="downloadFile('../data/停用词.zip')">词云
+    </button>
+    <button class="download-button" style="transform: rotateX(18deg) rotateY(18deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件2.zip')">2
+    </button>
+    <button class="download-button" style="transform: rotateX(36deg) rotateY(36deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件3.zip')">3
+    </button>
+    <button class="download-button" style="transform: rotateX(54deg) rotateY(54deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件4.zip')">4
+    </button>
+    <button class="download-button" style="transform: rotateX(72deg) rotateY(72deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件5.zip')">5
+    </button>
+    <button class="download-button" style="transform: rotateX(90deg) rotateY(90deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件6.zip')">6
+    </button>
+    <button class="download-button" style="transform: rotateX(108deg) rotateY(108deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件7.zip')">7
+    </button>
+    <button class="download-button" style="transform: rotateX(126deg) rotateY(126deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件8.zip')">8
+    </button>
+    <button class="download-button" style="transform: rotateX(144deg) rotateY(144deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件9.zip')">9
+    </button>
+    <button class="download-button" style="transform: rotateX(162deg) rotateY(162deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件10.zip')">10
+    </button>
+    <button class="download-button" style="transform: rotateX(180deg) rotateY(180deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件11.zip')">11
+    </button>
+    <button class="download-button" style="transform: rotateX(198deg) rotateY(198deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件12.zip')">12
+    </button>
+    <button class="download-button" style="transform: rotateX(216deg) rotateY(216deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件13.zip')">13
+    </button>
+    <button class="download-button" style="transform: rotateX(234deg) rotateY(234deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件14.zip')">14
+    </button>
+    <button class="download-button" style="transform: rotateX(252deg) rotateY(252deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件15.zip')">15
+    </button>
+    <button class="download-button" style="transform: rotateX(270deg) rotateY(270deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件16.zip')">16
+    </button>
+    <button class="download-button" style="transform: rotateX(288deg) rotateY(288deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件17.zip')">17
+    </button>
+    <button class="download-button" style="transform: rotateX(306deg) rotateY(306deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件18.zip')">18
+    </button>
+    <button class="download-button" style="transform: rotateX(324deg) rotateY(324deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件19.zip')">19
+    </button>
+    <button class="download-button" style="transform: rotateX(342deg) rotateY(342deg) translateZ(200px);"
+            onclick="downloadFile('../data/文件20.zip')">20
+    </button>
+</div>
+
+<script>
+    function downloadFile(downloadLink) {
+        // 创建虚拟<a>元素
+        var link = document.createElement('a');
+        link.href = downloadLink;  // 设置文件的下载链接
+        link.download = '';  // 如果需要指定文件名，可以在这里设置
+
+        // 模拟点击链接
+        document.body.appendChild(link);
+        link.click();
+
+        // 移除虚拟<a>元素
+        document.body.removeChild(link);
+    }
+</script>
+
+</body>
+</html>

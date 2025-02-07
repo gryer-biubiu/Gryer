@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>首页代码结构</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../static/css/dpl-min.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/bui-min.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/page-min.css" rel="stylesheet" type="text/css"/>
+    <!-- 下面的样式，仅是为了显示代码，而不应该在项目中使用-->
+    <link href="../static/css/prettify.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css"/>
+    <!-- 下面的样式，仅是为了显示代码，而不应该在项目中使用-->
+    <link href="../static/css/prism.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        code {
+            padding: 0px 4px;
+            color: #d14;
+            background-color: #f7f7f9;
+            border: 1px solid #e1e1e8;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="normalCategory" style="display: none;">-->
+<!-- 可视化函数的内容 -->
+<select id="functionDataframe" onchange="updateCode('Dataframe')">
+    <option value="df1">三维DateFrame</option>
+    <option value="df2">省份df处理</option>
+    <option value="df2">待更新</option>
+    <!-- Add more options as needed -->
+</select>
+<!--</div>-->
+<label for="pythonCode">代码：</label>
+<pre><code id="pythonCode" class="language-javascript"></code></pre>
+<button onclick="copyToClipboard('pythonCode')">复制</button>
+<span id="pythonCopyMessage"></span>
+
+<script type="text/javascript" src="../static/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="../static/js/pythonTool.js"></script>
+<script type="text/javascript" src="../static/js/prism.js"></script>
+<script type="text/javascript" src="../static/js/bui-min.js"></script>
+<script type="text/javascript" src="../static/js/config-min.js"></script>
+<script type="text/javascript">
+    BUI.use('common/page');
+</script>
+<!-- 仅仅为了显示代码使用，不要在项目中引入使用-->
+<script type="text/javascript" src="../static/js/prettify.js"></script>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+    // 在页面加载完成后调用此函数以默认显示函数1的代码
+    window.onload = function () {
+        updateCode('Dataframe');
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+{
+  "categories": [
+    {
+      "name": "Python",
+      "items": [
+        {
+          "name": "Python API",
+          "link": "https://www.cnpython.com"
+        },
+        {
+          "name": "pandas API",
+          "link": "https://pandas.pydata.org/pandas-docs/stable/reference/"
+        },
+        {
+          "name": "numpy API",
+          "link": "https://numpy.org/doc/"
+        },
+        {
+          "name": "matplotlib API",
+          "link": "https://matplotlib.org/stable/users/index.html"
+        },
+        {
+          "name": "pyecharts API",
+          "link": "https://pyecharts.org/#/zh-cn/datasets"
+        },
+        {
+          "name": "seaborn API",
+          "link": "https://seaborn.pydata.org/"
+        },
+        {
+          "name": "flask API",
+          "link": "https://flask.palletsprojects.com/en/3.0.x/"
+        },
+        {
+          "name": "jupyter API",
+          "link": "https://docs.jupyter.org/en/latest/"
+        },
+        {
+          "name": "scikit-learn API",
+          "link": "https://scikit-learn.org/stable/index.html"
+        },
+        {
+          "name": "Scrapy API",
+          "link": "https://scrapy-chs.readthedocs.io/zh-cn/1.0/intro/overview.html"
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "items": [
+        {
+          "name": "ChatGPT",
+          "link": "https://chat.openai.com/auth/login"
+        },
+        {
+          "name": "文心一言",
+          "link": "https://yiyan.baidu.com/"
+        },
+        {
+          "name": "千帆大模型",
+          "link": "https://console.bce.baidu.com/"
+        },
+        {
+          "name": "豆包",
+          "link": "https://www.doubao.com/"
+        }
+      ]
+    },
+    {
+      "name": "Special",
+      "items": [
+        {
+          "name": "VPN",
+          "link": "https://www.xmkyun.com/user"
+        },
+        {
+          "name": "Curlconverter",
+          "link": "https://curlconverter.com"
+        },
+        {
+          "name": "Tool",
+          "link": "https://tool.lu/curl/"
+        },
+        {
+          "name": "Anaconda镜像",
+          "link": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/"
+        },
+        {
+          "name": "易撰",
+          "link": "https://www.yizhuan5.com/"
+        },
+        {
+          "name": "IDEA激活码",
+          "link": "https://www.ajihuo.com/"
+        },
+        {
+          "name": "虚拟号码",
+          "link": "https://sms-activate.org/cn/"
+        },
+        {
+          "name": "鲸鱼",
+          "link": "https://www.heywhale.com/home/"
+        },
+        {
+          "name": "各种素材",
+          "link": "https://sc.chinaz.com/"
+        },
+        {
+          "name": "Tool官网",
+          "link": "https://tool.lu/"
+        },
+        {
+          "name": "...",
+          "link": "无"
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "items": [
+        {
+          "name": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/"
+        },
+        {
+          "name": "Kaggle",
+          "link": "https://www.kaggle.com/datasets"
+        },
+        {
+          "name": "DataCastle",
+          "link": "https://www.dcjingsai.com/"
+        },
+        {
+          "name": "天池",
+          "link": "https://tianchi.aliyun.com/"
+        },
+        {
+          "name": "CSDN社区",
+          "link": "https://blog.csdn.net/"
+        },
+        {
+          "name": "音乐专辑数据",
+          "link": "http://y.saoju.net/"
+        }
+      ]
+    }
+  ]
+}
